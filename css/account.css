@@ -1,0 +1,144 @@
+body {
+    font-family: 'VAG Rounded', sans-serif;
+    background-image: url("../img/gildegebouw.jpg");
+    background-size: auto;
+    margin: 0px;
+}
+
+#navbar {
+    background-color: rgb(247, 46, 126);
+    font-family: sans-serif;
+    padding: 10px 0;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+#logo {
+    width: 60px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#acount_icon{
+    width: 60px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#nav-links {
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-links a {
+    color: white;
+    text-align: center;
+    padding: 16px 17px;
+    text-decoration: none;
+    font-size: 25px;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    border-style: none;
+}
+
+#nav-links a:hover {
+    background-color: rgb(211, 39, 108);
+}
+
+article{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#inhoud_arti{
+    background-color: rgba(247, 46, 126, 0.87);
+    padding:20px;
+    width: 40%;
+    font-size: large;
+
+    Border: none;
+    border-radius: 7px;
+}
+
+#uitloggen{
+    background-color: rgb(211, 39, 108);
+    border-style: none;
+    border-radius: 7px;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+#header_arti{
+    background-color: rgba(247, 46, 126, 0.87);
+    padding: 0px 20px 0px 20px;
+    border-radius: 7px;
+    margin-bottom: 2%;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 470px){
+#header_arti{
+    border-radius: 7px;
+    margin-bottom: 2%;
+}
+#inhoud_arti{
+    padding: 10px;
+    width: 80%;
+    border-radius: 7px;
+}
+    #nav-links {
+    gap: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-links a{
+    font-size: 20px;
+    padding: 10px;
+}
+#logo{
+    display: none;
+}
+}
+
+/* @media only screen and (max-width: 766px) {
+    #header_arti{
+        text-align: center;
+        font-size: 15px;
+    }
+} */
+
+@media only screen and (min-width:450px) and (max-width: 860px) {
+    #header_arti h1 {
+        font-size: 30px;
+        padding: 5px;
+        border-radius: 7px;
+        text-align: center;
+    }
+
+    #logo{
+        width: 50px;
+        position: static;
+    }
+
+    #nav-links {
+    gap: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-links a{
+    font-size: 25px;
+}
+}

@@ -1,0 +1,230 @@
+body {
+    font-family: 'VAG Rounded', sans-serif;
+    background-image: url("../img/gildegebouw.jpg");
+    background-size: auto;
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+#navbar {
+    background-color: rgb(247, 46, 126);
+    font-family: sans-serif;
+    padding: 10px 0;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+#logo {
+    width: 60px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#acount_icoon{
+    width: 30px;
+}
+
+#account{
+    position: absolute;
+    right: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px !important;
+}
+
+#account_txt{
+    color: white;
+    font-size: 10px;
+}
+
+#nav-links {
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-links a {
+    color: white;
+    text-align: center;
+    padding: 16px 17px;
+    text-decoration: none;
+    font-size: 25px;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    border-style: none;
+}
+
+#nav-links a:hover {
+    background-color: rgb(211, 39, 108);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header_sect h1{
+    background-color: rgba(247, 46, 126, 0.87);
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+form{
+    margin-bottom: 1%;
+    display: flex;
+    flex-wrap:wrap;
+    gap: 10px;
+}
+
+input, select, #printer_icon{
+    background-color: rgba(247, 46, 126, 0.87);
+    border-style: solid;
+    border: none;
+    border-radius: 7px;
+}
+#printer_icon{ /*dddddd */
+    width: 25px;
+}
+
+#all_data_tonen{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap: 10px;
+    width: 90%;
+}
+
+#tabel_data{
+    background-color: rgba(247, 46, 126, 0.87);
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size: 20px;
+    max-width: 20%;
+    text-align: center;
+    width: 30%;
+}
+
+.tabel_tonen_data{
+    display: flex;
+    flex-direction: column;
+}
+
+#trhead{
+    border: 2px solid black;
+}
+
+td{
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+#beschrijving_werkzaamheden{
+    text-align: left;
+}
+
+#td_werkzaamheden{
+    max-width: 80vw;
+}
+
+.error{
+    background-color: rgba(247, 46, 126, 0.87);
+    padding: 5px;
+    border-radius: 7px;
+}
+
+
+@media only screen and (max-width: 450px){
+    #header_sect h1 {
+        font-size: 25px;
+        padding: 5px;
+    }
+
+#tonen_data{
+    background-color: rgba(247, 46, 126, 0.87);
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size: 20px;
+    width: 90%;
+}
+
+
+    #nav-links {
+    gap: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-links a{
+    font-size: 20px;
+    padding: 10px;
+}
+
+#account {
+    width: 50px;
+    position: static;
+}
+#logo{
+    display: none;
+}
+
+#form{
+    font-size: 20px;
+    padding: 10px;
+}
+#tonen_data{
+    width: 25%;
+}
+}
+
+@media only screen and (min-width:450px) and (max-width: 766px) {
+    #header_sect {
+        padding: 5px;
+        border-radius: 7px;
+        text-align: center;
+        
+    }
+
+    #account{
+        width: 55px;
+        position: static;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    #nav-links {
+    gap: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-links a{
+    font-size: 25px;
+}
+form {
+    max-width: 90%;
+}
+#tonen_data{
+    width: 25%;
+}
+}
+
+@media print {
+    #no_print {
+    display: none !important;
+    }
+    form{
+        display: none !important;
+    }
+    #header_sect{
+    font-size: 10px;
+}
+}
